@@ -11,6 +11,13 @@ import {routes}               from './routes';
 @Component({
     selector: 'app',
     template: `
+        <style>
+            @media (min-width: 768px) {
+                .navbar-brand {
+                    width: 100%;
+                }
+            }
+        </style>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
                 <a class="navbar-brand" routerLink="">
